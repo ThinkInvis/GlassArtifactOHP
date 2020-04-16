@@ -8,4 +8,4 @@ Prevents Artifact of Glass from disabling the One-Hit Prevention that normally a
 
 Release builds are published to Thunderstore: https://thunderstore.io/package/ThinkInvis/GlassArtifactOHP/
 
-Extract GlassArtifactOHP.zip into your BepInEx plugins folder such that the following path exists: `[RoR2 game folder]/BepInEx/Plugins/GlassArtifactOHP/GlassArtifactOHP.dll`.
+Extract ThinkInvis-GlassArtifactOHP-[version].zip into your BepInEx plugins folder such that the following path exists: `[RoR2 game folder]/BepInEx/Plugins/ThinkInvis-GlassArtifactOHP-[version]/GlassArtifactOHP.dll`.
