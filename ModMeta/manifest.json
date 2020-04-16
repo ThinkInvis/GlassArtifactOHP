@@ -1,0 +1,10 @@
+{
+  "name": "GlassArtifactOHP",
+  "version_number": "2.0.0",
+  "website_url": "https://github.com/ThinkInvis/RoR2-GlassArtifactOHP",
+  "description": "Prevents Artifact of Glass from disabling players' One-Hit Prevention.",
+  "dependencies": [
+    "bbepis-BepInExPack-3.2.0",
+    "tristanmcpherson-R2API-2.4.10"
+  ]
+}
