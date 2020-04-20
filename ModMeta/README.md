@@ -10,6 +10,11 @@ Normally, Artifact of Glass disables One-Hit Prevention on player health. This m
 
 ## Changelog
 
+**3.0.1**
+
+- Fixes IL patch failure still registering the artifact (which would proceed to do absolutely nothing).
+- Cleaned up an unnecessary hook.
+
 **3.0.0**
 
 - Implemented Artifact of Danger.
