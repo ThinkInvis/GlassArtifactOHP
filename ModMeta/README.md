@@ -2,18 +2,21 @@
 
 ## Description
 
-A tiny IL patch to restore One-Hit Prevention on player health when it would otherwise be disabled by Artifact of Glass.
+Normally, Artifact of Glass disables One-Hit Prevention on player health. This mod moves that disable to a new Artifact of Danger.
 
 ## Issues/TODO
 
-- Once an Artifact API is available and capable of adding new Artifacts, this mod will add a new Artifact which toggles OHP.
-- See the GitHub repo for more!
+- See the GitHub repo! No known issues at the time of version release.
 
 ## Changelog
 
+**3.0.0**
+
+- Implemented Artifact of Danger.
+
 **2.0.0**
 
-- BREAKING: changed namespace and main plugin classname to match other planned mods.
+- Changed namespace and main plugin classname to match other planned mods.
 - Published to a GitHub repo and added a link to the repo to mod metadata.
 - Added a safety check to the IL patch (should no longer cause an error if unable to find the target instructions).
 - Minor code changes: made IL patch slightly more concise.

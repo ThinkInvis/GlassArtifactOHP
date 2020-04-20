@@ -16,7 +16,7 @@ namespace ThinkInvisible.GlassArtifactOHP {
     [BepInPlugin(ModGuid, ModName, ModVer)]
     [R2APISubmoduleDependency(nameof(AssetPlus), nameof(ResourcesAPI))]
     public class GlassArtifactOHPPlugin:BaseUnityPlugin {
-        public const string ModVer = "2.0.0";
+        public const string ModVer = "3.0.0";
         public const string ModName = "GlassArtifactOHP";
         public const string ModGuid = "com.ThinkInvisible.GlassArtifactOHP";
         

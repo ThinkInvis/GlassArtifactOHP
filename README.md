@@ -2,7 +2,7 @@
 
 A mod for Risk of Rain 2. Built with BepInEx and R2API.
 
-Prevents Artifact of Glass from disabling the One-Hit Prevention that normally applies to player HP.
+Prevents Artifact of Glass from disabling the One-Hit Prevention that normally applies to player HP. Moves this functionality to a new Artifact of Danger.
 
 ## Installation
 
