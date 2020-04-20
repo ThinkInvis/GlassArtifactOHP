@@ -22,6 +22,8 @@ namespace ThinkInvisible.GlassArtifactOHP {
         
         public ArtifactDef dangerArtifact {get;private set;}
 
+        private bool ilFailed = false;
+
         public void Awake() {
             using(var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("GlassArtifactOHP.glassohp_assets")) {
                 var bundle = AssetBundle.LoadFromStream(stream);
@@ -30,7 +32,8 @@ namespace ThinkInvisible.GlassArtifactOHP {
             }
 
             IL.RoR2.CharacterBody.RecalculateStats += IL_CBRecalcStats;
-            ArtifactCatalog.getAdditionalEntries += Evt_ACGetAdditionalEntries;
+            if(!ilFailed)
+                ArtifactCatalog.getAdditionalEntries += Evt_ACGetAdditionalEntries;
         }
 
         private void Evt_ACGetAdditionalEntries(List<ArtifactDef> addEnts) {
@@ -59,6 +62,7 @@ namespace ThinkInvisible.GlassArtifactOHP {
                     return !RunArtifactManager.instance.IsArtifactEnabled(dangerArtifact);
                 });
             } else {
+                ilFailed = true;
                 Debug.LogError("GlassArtifactOHP: failed to apply IL patch! Mod not loaded.");
             }
         }
