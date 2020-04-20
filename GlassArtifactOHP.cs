@@ -22,8 +22,6 @@ namespace ThinkInvisible.GlassArtifactOHP {
         
         public ArtifactDef dangerArtifact {get;private set;}
 
-        private bool dangerEnabled;
-
         public void Awake() {
             using(var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("GlassArtifactOHP.glassohp_assets")) {
                 var bundle = AssetBundle.LoadFromStream(stream);
@@ -33,14 +31,6 @@ namespace ThinkInvisible.GlassArtifactOHP {
 
             IL.RoR2.CharacterBody.RecalculateStats += IL_CBRecalcStats;
             ArtifactCatalog.getAdditionalEntries += Evt_ACGetAdditionalEntries;
-            On.RoR2.RunArtifactManager.SetArtifactEnabled += RunArtifactManager_SetArtifactEnabled;
-        }
-
-        private void RunArtifactManager_SetArtifactEnabled(On.RoR2.RunArtifactManager.orig_SetArtifactEnabled orig, RunArtifactManager self, ArtifactDef artifactDef, bool newEnabled) {
-            if(artifactDef == dangerArtifact) {
-                dangerEnabled = newEnabled;
-            }
-            orig(self, artifactDef, newEnabled);
         }
 
         private void Evt_ACGetAdditionalEntries(List<ArtifactDef> addEnts) {
@@ -50,7 +40,6 @@ namespace ThinkInvisible.GlassArtifactOHP {
             dangerArtifact.smallIconDeselectedSprite = Resources.Load<Sprite>("@GlassArtifactOHP:Assets/GlassArtifactOHP/danger-off.png");
             dangerArtifact.smallIconSelectedSprite = Resources.Load<Sprite>("@GlassArtifactOHP:Assets/GlassArtifactOHP/danger-on.png");
 
-            //smallIconSelectedSprite, smallIconDeselectedSprite
             addEnts.Add(dangerArtifact);
         }
 
