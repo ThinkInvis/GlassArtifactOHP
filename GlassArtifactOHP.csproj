@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="glassohp_assets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="glassohp_assets" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
