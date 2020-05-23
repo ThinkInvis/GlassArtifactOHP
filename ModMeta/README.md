@@ -1,5 +1,9 @@
 # Glass Artifact OHP
 
+## MOD HAS BEEN MIGRATED
+
+GlassArtifactOHP is entirely included within [Tinker's Satchel](https://thunderstore.io/package/ThinkInvis/TinkersSatchel/) as of v1.1.0.
+
 ## Description
 
 Normally, Artifact of Glass disables One-Hit Prevention on player health. This mod moves that disable to a new Artifact of Danger.
@@ -9,6 +13,11 @@ Normally, Artifact of Glass disables One-Hit Prevention on player health. This m
 - See the GitHub repo! No known issues at the time of version release.
 
 ## Changelog
+
+**3.0.2**
+
+- Entire mod has been merged into Tinker's Satchel.
+- GitHub repo is now licensed (GNU GPL3) and archived.
 
 **3.0.1**
 
